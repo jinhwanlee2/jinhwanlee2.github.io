@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from "./Home";
 import Portfolio from './Portfolio';
 import Education from "./Education";
@@ -8,9 +8,15 @@ import Resume from "./Resume";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
+  const [showText, setShowText] = useState(false);
+  
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
+  useEffect(() => {
+    setShowText(true);
+  }, [activeTab]);
 
   return (
     <div className="App">
@@ -41,7 +47,7 @@ function App() {
             Education
           </li>
         </ul>
-        <div className="tab-content">
+        <div className={`tab-content ${showText ? 'show' : ''}`}>
           {activeTab === "home" && <Home />}
           {activeTab === "portfolio" && <Portfolio />}
           {activeTab === "resume" && <Resume />}
