@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+
 import github from './github.png'
 import TypeWriterEffect from 'react-typewriter-effect';
 import './App.css';
@@ -47,7 +47,7 @@ function App() {
         </header>
         <div className="Logo-container">
             <a href="https://github.com/jinhwanlee2" target="_blank" rel="noopener noreferrer">
-            <img src={github} className="App-logo" alt="github" />
+            <img src={github} className="Github-logo" alt="github" />
             </a>
         </div>
        </div>
