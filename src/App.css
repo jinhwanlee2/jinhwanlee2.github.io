@@ -3,10 +3,14 @@ body {
   background-color: #282c34;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .About-me{
   font-size: 60px;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 20px;
 }
 
 .App {
@@ -14,23 +18,85 @@ body {
 }
 
 .Logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 33%;
+}
+
+.Beckman-logo {
+  height: 15vh;
   position: relative;
-  height: 50vh; /* Adjust the height of the container as needed */
 }
 
 .App-logo {
   position: absolute;
   bottom: 0;
   left: 50%;
+  width: 5vmin;
   height: 5vmin;
-  transform: translateX(-50%);
+  transition: transform 0.5s ease;
 }
 
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes rotate-left {
+  0% {
+    transform: rotate(30deg);
   }
-} */
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes toggle {
+  0% {
+    transform: rotate(0deg)
+  }
+  25% {
+    transform: rotate(-60deg)
+  }
+  50% {
+    transform: rotate(0deg)
+  }
+  75% {
+    transform: rotate(60deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo:hover {
+    animation: spin 1s infinite;
+  }
+}
 
 .App-header {
   min-height: 40vh;
@@ -47,8 +113,18 @@ body {
   color: #61dafb;
 }
 
+.Background {
+  max-width: 1800px;
+}
+
+.Cursor {
+  animation: blink-cursor 0.8s infinite;
+}
+
+
 .Name{
-  font-size: 20px;
+  font-size: 30px;
+  margin-top: 300px;
 }
 
 .tab-bar {
@@ -67,14 +143,6 @@ body {
   background-color: transparent;
 }
 
-.tab-content {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.tab-content.show {
-  opacity: 1;
-}
 
 @keyframes App-logo-spin {
   from {

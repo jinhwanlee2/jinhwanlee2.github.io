@@ -1,22 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import github from './github.png'
+import TypeWriterEffect from 'react-typewriter-effect';
 import './App.css';
 
 function App() {
-
-    const [text, setText] = useState("Learner");
-
-    useEffect(() => {
-        const texts = ["Learner", "Scholar", "Software Engineer"];
-        let currentIndex = 0;
-
-        const intervalId = setInterval(() => {
-        setText(texts[currentIndex]);
-        currentIndex = (currentIndex + 1) % texts.length;
-        }, 1200);
-
-        return () => clearInterval(intervalId);
-    }, []);
 
     return (
       <div className="App">
@@ -31,11 +18,30 @@ function App() {
           >
             I'm a passionate
           </a>
-          <p>{text}</p>
+          <TypeWriterEffect
+            textStyle={{
+              fontFfamily: 'Red Hat Display',
+              color: 'white',
+              fontWeight: 500,
+              fontSize: '1.5em',
+            }}
+            startDelay={2000}
+            cursorColor = "#3F3D56"
+            multiText={[
+              'Scholar',
+              'Web Developer',
+              'Food Fanatic',
+              'Coder'
+            ]}
+            multiTextDelay={1500}
+            typeSpeed={40}
+            multiTextLoop
+          />
           <p
             className="Background"
           >
-            I am a recent graduate from UC Santa Cruz. I have moderate experience in Full-Stack Web Development, and wish to further hone and develop my skills in this department. 
+            I am a recent graduate from UC Santa Cruz. I have moderate experience in Full-Stack Web Development, and wish to further hone and develop my skills in this department. I am also open-minded and interested in other fields such as Data Science, 
+            Machine Learning, and Software Development. 
             
           </p>
         </header>

@@ -1,3 +1,4 @@
+import beckman from './beckman.png'
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,11 @@ function App() {
             Learn React
           </a>
         </header>
+        <div className="Logo-container">
+            <a>
+            <img src={beckman} className="Beckman-logo" alt="beckman" />
+            </a>
+        </div>
       </div>
     );
   }

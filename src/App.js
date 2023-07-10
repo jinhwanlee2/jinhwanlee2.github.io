@@ -8,15 +8,10 @@ import Resume from "./Resume";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
-  const [showText, setShowText] = useState(false);
   
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
-  useEffect(() => {
-    setShowText(true);
-  }, [activeTab]);
 
   return (
     <div className="App">
@@ -47,7 +42,7 @@ function App() {
             Education
           </li>
         </ul>
-        <div className={`tab-content ${showText ? 'show' : ''}`}>
+        <div className= "tab-content">
           {activeTab === "home" && <Home />}
           {activeTab === "portfolio" && <Portfolio />}
           {activeTab === "resume" && <Resume />}
