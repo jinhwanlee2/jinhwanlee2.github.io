@@ -40,7 +40,7 @@ function App() {
           <p
             className="Background"
           >
-            I am a recent graduate from UC Santa Cruz. I have moderate experience in Full-Stack Web Development, and wish to further hone and develop my skills in this department. I am also open-minded and interested in other fields such as Data Science, 
+            I am a recent graduate from UC Santa Cruz. I have experience in Full-Stack Web Development, and wish to further hone and develop my skills in this department. I am also open-minded and interested in other fields such as Data Science, 
             Machine Learning, and Software Development. 
             
           </p>

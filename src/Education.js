@@ -1,6 +1,6 @@
 import beckman from './beckman.png'
 import ucsc from './ucsc.png'
-import logo from './logo.svg';
+import github from './github.png';
 import './App.css';
 
 function App() {
@@ -42,6 +42,11 @@ function App() {
    
 
         </header>
+        <div className="Logo-container">
+            <a href="https://github.com/jinhwanlee2" target="_blank" rel="noopener noreferrer">
+            <img src={github} className="Github-logo" alt="github" />
+            </a>
+        </div>
       </div>
     );
   }
