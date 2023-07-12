@@ -9,18 +9,17 @@ function App() {
       <div className="App">
         <header className="App-header">
           <p
-            className="Name"
+            className="Name slideUptoBot animate--fast"
           >
             Hello There! I'm Jin Lee
           </p>
           <a
-            className="About-me"
+            className="About-me slideUptoBot animate"
           >
             I'm a passionate
           </a>
           <TypeWriterEffect
             textStyle={{
-              fontFfamily: 'Red Hat Display',
               color: 'white',
               fontWeight: 500,
               fontSize: '1.5em',
@@ -33,12 +32,12 @@ function App() {
               'Food Fanatic',
               'Coder'
             ]}
-            multiTextDelay={1500}
+            multiTextDelay={2000}
             typeSpeed={40}
             multiTextLoop
           />
           <p
-            className="Background"
+            className="Background slideUptoBot animate--slow"
           >
             I am a recent graduate from UC Santa Cruz. I have experience in Full-Stack Web Development, and wish to further hone and develop my skills in this department. I am also open-minded and interested in other fields such as Data Science, 
             Machine Learning, and Software Development. 

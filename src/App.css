@@ -4,18 +4,57 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .About-me{
   font-size: 60px;
-  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
   margin-top: 20px;
+}
+
+.animate {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+.animate--fast {
+  animation-duration: 0.4s;
+}
+
+.animate--slow {
+  animation-duration: 0.8s;
+}
+
+.animate--slow1 {
+  animation-duration: 1s;
+}
+
+.animate--slow2 {
+  animation-duration: 1.2s;
+}
+
+.slideUptoBot {
+  animation-name: slideUptoBot;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slideUptoBot {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .App {
   max-width: 1800px;
   padding: 20px;
   margin: 0 auto;
+
 }
 
 .Logo-container {
@@ -52,8 +91,8 @@ body {
 }
 
 .Github-logo {
-  position: absolute;
-  margin-top: 10vh;
+
+  bottom: 0px;
   width: 60px;
   height: 60px;
   transition: transform 0.5s ease;
@@ -85,7 +124,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  
+  height: 1000px;
 }
 
 .App-link {
@@ -107,6 +146,11 @@ body {
 
 .Years-attended {
   font-size: 16px;
+}
+
+.Name {
+  top: 0;
+  color:rgb(233, 169, 199)
 }
 
 
@@ -134,4 +178,8 @@ body {
 .Text-container {
   margin-top: 20vh;
   text-align: center;
+}
+
+.TypeWriter {
+  font-family: 'Courier New', Courier, monospace;
 }
