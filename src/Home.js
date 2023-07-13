@@ -18,10 +18,11 @@ function App() {
           >
             I'm a passionate
           </a>
-          <TypeWriterEffect
+         
+            <TypeWriterEffect
             textStyle={{
-              color: 'white',
-              fontWeight: 500,
+              color: 'rgb(131, 37, 150)',
+              fontWeight: 1000,
               fontSize: '1.5em',
             }}
             startDelay={2000}
@@ -35,7 +36,8 @@ function App() {
             multiTextDelay={2000}
             typeSpeed={40}
             multiTextLoop
-          />
+            />
+         
           <p
             className="Background slideUptoBot animate--slow"
           >
@@ -46,7 +48,7 @@ function App() {
         </header>
         <div className="Logo-container">
             <a href="https://github.com/jinhwanlee2" target="_blank" rel="noopener noreferrer">
-            <img src={github} className="Github-logo" alt="github" />
+                <img src={github} className="Github-logo" alt="github" />
             </a>
         </div>
        </div>

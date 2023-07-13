@@ -1,14 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import pdf from './resume.pdf';
+import { Document, Page,} from 'react-pdf';
 
 function App() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="Github-logo" alt="logo" />
-          <p>
-            Test
+          <p className="Resume-title">
+            Resume
           </p>
+          
           <a
             className="App-link"
             href="https://reactjs.org"

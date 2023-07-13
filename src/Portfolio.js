@@ -1,21 +1,25 @@
-import logo from './logo.svg';
+import YouTube from 'react-youtube';
 import './App.css';
 
 function App() {
+    const videoId = '9Kp97Vv2hnc';
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="Github-logo" alt="logo" />
           <p>
-            Test
+            Personal Portfolio
           </p>
+          <p className="Project-title">
+            Slug Planner
+          </p>
+          <YouTube videoId={videoId} />
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/BetrosA/academic-planner"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Github
           </a>
         </header>
       </div>

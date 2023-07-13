@@ -9,29 +9,38 @@ body {
 
 .About-me{
   font-size: 60px;
-  font-weight: bold;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .animate {
-  animation-duration: 0.6s;
+  animation-delay: 0.5s;
+  animation-duration: 0.4s;
   animation-fill-mode: both;
 }
 
 .animate--fast {
+  animation-delay: 0.1s;
   animation-duration: 0.4s;
+  animation-fill-mode: both;
 }
 
 .animate--slow {
-  animation-duration: 0.8s;
+  animation-delay: 0.8s;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
 }
 
 .animate--slow1 {
-  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
 }
 
 .animate--slow2 {
-  animation-duration: 1.2s;
+  animation-delay: 1.3s;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
 }
 
 .slideUptoBot {
@@ -54,7 +63,6 @@ body {
   max-width: 1800px;
   padding: 20px;
   margin: 0 auto;
-
 }
 
 .Logo-container {
@@ -117,14 +125,14 @@ body {
 }
 
 .App-header {
-  min-height: 40vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  height: 1000px;
+
 }
 
 .App-link {
@@ -144,18 +152,18 @@ body {
   font-size: 20px;
 }
 
-.Years-attended {
-  font-size: 16px;
-}
-
 .Name {
-  top: 0;
+  margin-top: 250px;
   color:rgb(233, 169, 199)
 }
 
+.Resume-title {
+  top: 0;
+}
 
 .School-name{
   font-size: 30px;
+  font-weight: bold;
   max-height: 70px;
 }
 
@@ -181,5 +189,9 @@ body {
 }
 
 .TypeWriter {
-  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.Years-attended {
+  font-size: 16px;
 }

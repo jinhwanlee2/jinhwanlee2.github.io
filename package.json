@@ -8,9 +8,11 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pdf": "^7.1.2",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.10.1",
     "react-typewriter-effect": "^1.1.0",
+    "react-youtube": "^10.1.0",
     "tsparticles": "^2.10.1",
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"
