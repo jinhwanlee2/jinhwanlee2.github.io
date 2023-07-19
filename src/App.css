@@ -59,6 +59,22 @@ body {
   }
 }
 
+.slideBottoUp {
+  animation-name: slideBottoUp;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slideBottoUp {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .App {
   max-width: 1800px;
   padding: 20px;
@@ -152,9 +168,83 @@ body {
   font-size: 20px;
 }
 
+.download-button {
+  padding: 10px 20px;
+  background-color: #8849a1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.2s;
+  margin-bottom: 20px;
+}
+
+.download-button:hover {
+  background-color: #561a6e;
+}
+
+.download-button:active {
+  background-color: #bd50f0;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.portfolio-title {
+  margin-top: 150px; /* Adjust the margin as needed */
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  align-items: center; 
+  margin-top: 150px;
+}
+
+.project-video {
+  font-weight: bold;
+  color:rgb(214, 177, 55);
+  grid-column: 1; 
+}
+
+.project-link {
+  grid-column: 3; 
+}
+
 .Name {
   margin-top: 250px;
   color:rgb(233, 169, 199)
+}
+
+.Portfolio-header {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.project-name {
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+.project-video {
+  padding: 1rem;
+  margin: 0 0.5rem;
 }
 
 .Resume-title {
@@ -165,6 +255,14 @@ body {
   font-size: 30px;
   font-weight: bold;
   max-height: 70px;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .tab-bar {

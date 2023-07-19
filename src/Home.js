@@ -34,7 +34,7 @@ function App() {
               'Coder'
             ]}
             multiTextDelay={2000}
-            typeSpeed={40}
+            typeSpeed={100}
             multiTextLoop
             />
          
