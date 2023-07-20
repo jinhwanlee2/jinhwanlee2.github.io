@@ -31,8 +31,8 @@ function App() {
               'Scholar',
               'Web Developer',
               'Food Fanatic',
-              'Coder'
-            ]}
+              'Progammer'
+            ]}s
             multiTextDelay={2000}
             typeSpeed={100}
             multiTextLoop

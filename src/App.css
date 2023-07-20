@@ -213,15 +213,19 @@ body {
   margin-top: 150px;
 }
 
-.project-video {
+.project-demo {
   font-weight: bold;
   color:rgb(214, 177, 55);
   grid-column: 1; 
 }
 
 .project-link {
-  grid-column: 3; 
+  grid-column: 2 / 5; 
+  margin-left: 200px;
+  font-size: 30px;
 }
+
+.pdf {}
 
 .Name {
   margin-top: 250px;

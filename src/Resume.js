@@ -1,5 +1,5 @@
 import './App.css';
-import pdf from './resume.PNG';
+import pdf from './resume.png';
 
 function App() {
     return (
@@ -13,17 +13,9 @@ function App() {
             DOWNLOAD
           </button>
           </a>
-            <a className="pdf slideBottoUp animate">
-                <img src={pdf}></img>
+            <a className="pdf slideBottoUp animate"> 
+              <img src={pdf} alt="PDF" style={{ width: "50%", height: "50%" }} />
             </a>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React! 
-          </a>
         </header>
       </div>
     );

@@ -31,11 +31,9 @@ function App() {
           Personal Portfolio
         </p>
         <div className="project-details" style={{ marginBottom: '40vh' }}>
-          <div className="project-video hidden">
+          <div className="project-demo hidden">
             Slug Planner
             <YouTube videoId={videoId} />
-          </div>
-          <div className="project-link">
             <a
               className="App-link"
               href="https://github.com/BetrosA/academic-planner"
@@ -45,8 +43,33 @@ function App() {
               Github
             </a>
           </div>
+          <div className="project-link hidden">
+            <p>The Slug Planner is a user-friendly web application designed to help students efficiently plan and organize their long-term academic goals. 
+              By providing a streamlined interface and powerful search and filtering tools, the Academic Planner simplifies the process of selecting courses, 
+              creating a balanced curriculum, and keeping track of academic progress for a 4 or 5-year academic plan. The data is being stored in the 
+              Firebase from extensive web scraping from the actual UCSC course webpage. This data is then utilized in the front end to provide the user
+              the information they may want in an organized fashion.</p>
           </div>
-        <section className="hidden">Personal Portfolio</section>
+        </div>
+        <section className="hidden">
+          <div className="project-details">
+            <div className="project-demo">
+              Blackjack Versus
+              <YouTube videoId={videoId} />
+              <a
+                className="App-link"
+                href="https://github.com/jinhwanlee2/blackjack-versus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
+            <div className="project-link">
+              <p>The Slug Planner is a user-friendly web application designed to help students efficiently plan and organize their long-term academic goals. By providing a streamlined interface and powerful search and filtering tools, the Academic Planner simplifies the process of selecting courses, creating a balanced curriculum, and keeping track of academic progress for a 4 or 5-year academic plan.</p>
+            </div>
+          </div>
+        </section>
         <section className="hidden">Personal Portfolio</section>
         <section className="hidden">Personal Portfolio</section>
         <section className="hidden">Personal Portfolio</section>
