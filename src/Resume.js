@@ -8,7 +8,7 @@ function App() {
           <p className="Resume-title slideUptoBot animate--fast">
             Resume
           </p>
-          <a href="https://drive.google.com/uc?export=download&id=1dwG4uYWXbUqm6HsG4U8tXJGwJUIknrGv" download="resume.pdf" >
+          <a href="https://drive.google.com/uc?export=download&id=1dwG4uYWXbUqm6HsG4U8tXJGwJUIknrGv" download="jin_lee_resume.pdf" >
           <button className="download-button">
             DOWNLOAD
           </button>

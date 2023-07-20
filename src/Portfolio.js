@@ -66,7 +66,10 @@ function App() {
               </a>
             </div>
             <div className="project-link">
-              <p>The Slug Planner is a user-friendly web application designed to help students efficiently plan and organize their long-term academic goals. By providing a streamlined interface and powerful search and filtering tools, the Academic Planner simplifies the process of selecting courses, creating a balanced curriculum, and keeping track of academic progress for a 4 or 5-year academic plan.</p>
+              <p>Blackjack Versus is a fully functional Blackjack game with both single-player and multiplayer capabilities. The game utilizes client-server 
+                communication to update and synchronize game states in real-time. The multiplayer mode follows a turn-based approach, where the server waits for 
+                all client actions before proceeding to the next round. The project utilizes Express and WebSocket for the communication and management of real-time
+                interactions between multiple clients.</p>
             </div>
           </div>
         </section>
