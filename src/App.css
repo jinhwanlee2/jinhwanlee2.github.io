@@ -203,7 +203,8 @@ body {
 }
 
 .portfolio-title {
-  margin-top: 150px; /* Adjust the margin as needed */
+  margin-top: 150px;
+  color:rgb(233, 169, 199)
 }
 
 .project-details {
