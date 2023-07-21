@@ -203,29 +203,31 @@ body {
 }
 
 .portfolio-title {
-  margin-top: 150px;
+  margin-top: 75px;
   color:rgb(233, 169, 199)
 }
 
-.project-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  align-items: center; 
-  margin-top: 150px;
-}
 
 .project-demo {
   font-weight: bold;
-  color:rgb(214, 177, 55);
-  grid-column: 1; 
+  color: rgb(214, 177, 55);
 }
 
 .project-link {
-  grid-column: 2 / 5; 
-  margin-left: 200px;
   font-size: 30px;
 }
 
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-areas: 
+      'demo'
+      'link'; /* Adjust grid layout for smaller screens */
+  }
+}
 .pdf {}
 
 .Name {

@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 function App() {
   const videoId = '9Kp97Vv2hnc';
+  const videoId2 = '61hkjlCi76I'
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -30,7 +31,7 @@ function App() {
         <p className="portfolio-title">
           Personal Portfolio
         </p>
-        <div className="project-details" style={{ marginBottom: '40vh' }}>
+        <div className="project-details" style={{ marginBottom: '40vh', marginTop: '100px'}}>
           <div className="project-demo hidden">
             Slug Planner
             <YouTube videoId={videoId} />
@@ -51,12 +52,19 @@ function App() {
               the information they may want in an organized fashion.</p>
           </div>
         </div>
+
         <section className="hidden">
           <div className="project-details">
             <div className="project-demo">
               Blackjack Versus
-              <YouTube videoId={videoId} />
-              <a
+              <YouTube videoId={videoId2} />
+            </div>
+            <div className="project-link">
+              <p>Blackjack Versus is a fully functional Blackjack game with both single-player and multiplayer capabilities. The game utilizes client-server 
+                communication to update and synchronize game states in real-time. The multiplayer mode follows a turn-based approach, where the server waits for 
+                all client actions before proceeding to the next round. The project utilizes Express and WebSocket for the communication and management of real-time
+                interactions between multiple clients. </p>
+                <a
                 className="App-link"
                 href="https://github.com/jinhwanlee2/blackjack-versus"
                 target="_blank"
@@ -65,18 +73,14 @@ function App() {
                 Github
               </a>
             </div>
-            <div className="project-link">
-              <p>Blackjack Versus is a fully functional Blackjack game with both single-player and multiplayer capabilities. The game utilizes client-server 
-                communication to update and synchronize game states in real-time. The multiplayer mode follows a turn-based approach, where the server waits for 
-                all client actions before proceeding to the next round. The project utilizes Express and WebSocket for the communication and management of real-time
-                interactions between multiple clients.</p>
-            </div>
           </div>
         </section>
-        <section className="hidden">Personal Portfolio</section>
-        <section className="hidden">Personal Portfolio</section>
-        <section className="hidden">Personal Portfolio</section>
-        <section className="hidden">Personal Portfolio</section>
+        <section className="hidden">
+          <p>This Website is something that I personally created from a basic React app creation. As a passionate developer, I wanted it to be something I can easily update 
+            and showcase my skills and experiences to anyone who comes to stumble upon it. Hopefully as my programming career continues I will be able to embark on new projects
+            and seek more opportunities that will continue to be reflected on through the development of this website.
+          </p>
+        </section>
       </header>
     </div>
   );
