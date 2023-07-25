@@ -75,12 +75,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="hidden">
-          <p>This Website is something that I personally created from a basic React app creation. As a passionate developer, I wanted it to be something I can easily update 
-            and showcase my skills and experiences to anyone who comes to stumble upon it. Hopefully as my programming career continues I will be able to embark on new projects
-            and seek more opportunities that will continue to be reflected on through the development of this website.
-          </p>
-        </section>
+      
       </header>
     </div>
   );

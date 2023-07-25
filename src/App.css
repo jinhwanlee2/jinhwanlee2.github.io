@@ -218,14 +218,12 @@ body {
 }
 
 
-
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .project-container {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr;
     grid-template-areas: 
       'demo'
-      'link'; /* Adjust grid layout for smaller screens */
+      'link'; 
   }
 }
 .pdf {}
@@ -300,3 +298,5 @@ section {
 .Years-attended {
   font-size: 16px;
 }
+
+
