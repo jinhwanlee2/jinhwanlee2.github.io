@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.b8d9db96.css",
-    "main.js": "/static/js/main.85db2d37.js",
+    "main.js": "/static/js/main.fec01375.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/ucsc.png": "/static/media/ucsc.3379215eec7936125e5a.png",
-    "static/media/resume.png": "/static/media/resume.823766cdf32c0e9afb1f.png",
+    "static/media/resume.png": "/static/media/resume.272dae5c8887a0064762.png",
     "static/media/beckman.png": "/static/media/beckman.6dad3a9405f5bebd3fde.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.b8d9db96.css.map": "/static/css/main.b8d9db96.css.map",
-    "main.85db2d37.js.map": "/static/js/main.85db2d37.js.map",
+    "main.fec01375.js.map": "/static/js/main.fec01375.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8d9db96.css",
-    "static/js/main.85db2d37.js"
+    "static/js/main.fec01375.js"
   ]
 }
