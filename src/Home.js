@@ -1,5 +1,6 @@
 
 import github from './github.png'
+import linkedin from './LinkedIn.png'
 import TypeWriterEffect from 'react-typewriter-effect';
 import './App.css';
 
@@ -50,6 +51,9 @@ function App() {
             <a href="https://github.com/jinhwanlee2" target="_blank" rel="noopener noreferrer">
                 <img src={github} className="Github-logo" alt="github" />
             </a>
+            <a href="https://www.https://www.linkedin.com/in/jin-lee-3839a0284/" target="_blank" rel="noopener noreferrer" >
+            <img src={linkedin} className="Github-logo" alt="logo" />
+          </a>
         </div>
        </div>
     );
